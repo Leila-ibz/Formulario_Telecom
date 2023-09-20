@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Feedback del Curso</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <div class="background-image"></div>
     <div class="container">
-        <h1>Formulario Feedback de Finalizacion de Curso</h1>
+        <h1>Formulario de Feedback de Finalización de Curso</h1>
         <form id="feedback-form">
             <div class="section">
                 <h2>Información Personal:</h2>
@@ -31,13 +30,12 @@
                 </select>
             </div>
             <div class="section">
-                <h2>Preguntas sobre el Contenido</h2>
+                <h2>Preguntas sobre el Contenido:</h2>
                 <textarea placeholder="¿Qué te pareció el contenido de los módulos del curso?"></textarea>
-                <textarea placeholder="¿Crees que el contenido aporto conocimientos relevantes a tu carrera?"></textarea>
-                <textarea placeholder="¿Qué te parecieron los videos de cada módulo del curso?"></textarea>
+                <textarea placeholder="¿Crees que el contenido aportó conocimientos relevantes a tu carrera?"></textarea>
             </div>
             <div class="section">
-                <h2>Calidad de la Instrucción</h2>
+                <h2>Calidad de la Instrucción:</h2>
                 <select required>
                     <option value="" disabled selected>Calidad de Enseñanza</option>
                     <option value="excelente">Excelente</option>
@@ -45,10 +43,9 @@
                     <option value="regular">Regular</option>
                     <option value="mala">Mala</option>
                 </select>
-               
             </div>
             <div class="section">
-                <h2>Plataforma y Recursos</h2>
+                <h2>Plataforma y Recursos:</h2>
                 <select required>
                     <option value="" disabled selected>Fácil de Usar</option>
                     <option value="si">Sí</option>
@@ -66,15 +63,16 @@
                 </select>
             </div>
             <div class="section">
-                <h2>Sugerencias de Mejora</h2>
+                <h2>Sugerencias de Mejora:</h2>
                 <textarea placeholder="Sugerencias para mejorar el curso"></textarea>
-                <textarea placeholder="Hacer el curso más interactivo"></textarea>
             </div>
             <div class="section">
-                <h2>Recomendarías este curso a otras personas?</h2>
+                <h2>¿Recomendarías este curso a otras personas?</h2>
                 <label>
-                    <input type="checkbox"> Si.
-                    <input type="checkbox"> No.
+                    <input type="radio" name="recomendar" value="si"> Sí
+                </label>
+                <label>
+                    <input type="radio" name="recomendar" value="no"> No
                 </label>
                 <textarea placeholder="Comentario final sobre tu experiencia"></textarea>
             </div>
@@ -85,8 +83,18 @@
     <script>
         document.getElementById('feedback-form').addEventListener('submit', function(event) {
             event.preventDefault();
-            swal("¡Formulario Enviado!", "Tu formulario fue enviado con éxito. ¡Muchas gracias por formar parte de Digit@lers! Te deseamos el mayor de los éxitos en esta nueva estapa.", "success");
+            swal("¡Formulario Enviado!", "Tu formulario fue enviado con éxito. ¡Muchas gracias por formar parte de Digit@lers! Te deseamos el mayor de los éxitos en esta nueva etapa.", "success");
         });
     </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
